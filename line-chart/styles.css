@@ -1,0 +1,35 @@
+body{
+  font: 10px sans-serif;
+}
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.line {
+  fill: none;
+  stroke: #3498db;
+  stroke-width: 2px;
+}
+
+.area{
+  opacity:.25;
+  fill: #3498db;
+}
+.circle{
+  stroke: #3498db;
+  fill: #fff;
+  stroke-width: 2px;
+}
+.circle.active{
+  stroke-width: 3px;
+}
+.bubble rect{
+  stroke: #3498db;
+  fill: #fff;
+}
+.bubble text{
+  font-size: 12px;
+}
