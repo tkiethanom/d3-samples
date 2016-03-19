@@ -105,7 +105,7 @@ function render(){
     .call(yAxis)
     .append('text')
     .attr('transform', 'rotate(-90)')
-    .attr('y', 6)
+    .attr('y', '1.5em')
     .style('text-anchor', 'end')
     .text('Price ($)');
 
