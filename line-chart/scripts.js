@@ -352,13 +352,13 @@ function updateData(data) {
 }
 
 function getDimensions() {
-  var winWidth = window.innerWidth;
+  var containerWidth = parseInt(d3.select('.chart-container').style('width'));
   margin.top = 20;
   margin.right = 30;
   margin.left = 40;
   margin.bottom = 30;
 
-  width = winWidth - margin.left - margin.right;
+  width = containerWidth - margin.left - margin.right;
   if(width > maxWidth){
     width = maxWidth;
   }
