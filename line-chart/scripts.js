@@ -72,13 +72,11 @@ function render(){
   y.domain([0, d3.max(data, function(d) { return d.value; }) * 1.25]);
 
   area = d3.svg.area()
-    .interpolate( 'linear' )
     .x( function( d )  { return x( d.date ); } )
     .y0( height )
     .y1( function( d ) { return y( d.value ); } );
 
   line = d3.svg.area()
-    .interpolate( 'linear' )
     .x( function( d )  { return x( d.date ); } )
     .y( function( d ) { return y( d.value ); } );
 
@@ -300,13 +298,11 @@ function updateData(data) {
     .orient('left');
 
   area = d3.svg.area()
-    .interpolate( 'linear' )
     .x( function( d )  { return x( d.date ); } )
     .y0( height )
     .y1( function( d ) { return y( d.value ); } );
 
   line = d3.svg.area()
-    .interpolate( 'linear' )
     .x( function( d )  { return x( d.date ); } )
     .y( function( d ) { return y( d.value ); } );
 
